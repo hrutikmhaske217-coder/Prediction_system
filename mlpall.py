@@ -6,12 +6,7 @@ import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.neural_network import MLPClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.naive_bayes import GaussianNB
+
 
 # Load data
 data = {
@@ -36,13 +31,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 # -----------------------------
 models = {
     "Logistic Regression": LogisticRegression(),
-    "Neural Network (MLP)": MLPClassifier(hidden_layer_sizes=(10, 5), max_iter=1000),
-    "Decision Tree": DecisionTreeClassifier(),
-    "Random Forest": RandomForestClassifier(),
-    "KNN": KNeighborsClassifier(),
-    "SVM": SVC(probability=True),
-    "Naive Bayes": GaussianNB(),
-    "Gradient Boosting": GradientBoostingClassifier()
 }
 
 # Train and Save Models
