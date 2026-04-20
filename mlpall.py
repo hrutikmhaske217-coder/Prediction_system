@@ -49,7 +49,7 @@ for name in models.keys():
 # -----------------------------
 # Streamlit UI
 # -----------------------------
-st.title("🏥 Patient Risk Prediction System (8 ML Models)")
+st.title("🏥 Patient Risk Prediction System ")
 
 model_choice = st.selectbox("Select Model", list(loaded_models.keys()))
 
